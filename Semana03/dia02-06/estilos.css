@@ -1,0 +1,199 @@
+/*
+font-family: "Raleway", sans-serif;
+font-family: "Open Sans", sans-serif;
+*/
+
+/* GENERALES */
+
+/* Selector universal */
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 14px; /* 16px es el valor por defecto */
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+
+  color: hsl(0, 0%, 100%);
+
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+img {
+  /* TODO: RWD(RESPONSIVE WEB DESIGN) para las imágenes */
+  max-width: 100%; /* La imagen nunca será más grande que su contenedor */
+  height: auto;
+}
+
+/* UTILITARIOS  */
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  width: min(100% - 42px, 1440px); /* TODO: Adaptar el ancho a dispositivos más pequeños como tablets o móviles */
+
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  /* border: 1px solid red; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 42px;
+
+  background-color: hsl(217, 28%, 15%);
+}
+
+.header__logo {
+  
+  width: 140px;
+}
+
+.header__nav {
+
+  display: flex;
+  gap: 42px; /* 42px = 14 * 3 = 3rem */
+}
+
+/* HERO */
+
+/* REM: Root EM (Ancho de la letra M) */
+
+.hero {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* 2rem <> 28px <> 14px * 2 */
+
+  padding-top: 3rem;
+  padding-bottom: 12rem; /* 168px */
+
+  background-color: hsl(217, 28%, 15%);
+
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.hero__title {
+  /* min: Elije el valor más pequeño entre los que le pasemos */
+  width: min(100% - 3rem, 720px);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700; /* por defecto */
+
+  text-align: center;
+}
+
+.hero__text {
+  width: min(100% - 3rem, 460px);
+
+  text-align: center;
+}
+
+.hero__button {
+  border: none;
+
+  background-color: hsl(176, 68%, 64%);
+  border-radius: 7rem;
+  padding: 1rem;
+  min-width: 260px;
+  color: white;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 3rem;
+}
+
+.order{
+  width: min(100% - 4rem, 350px)
+}
+
+.icons__image{
+  padding-bottom: 2rem;
+}
+.icons__title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.icons__text{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.produccion{
+  display: flex;
+  justify-content: center;
+  padding-left: 20rem;
+  padding-top: 12rem;
+  gap: 5rem;
+  
+}
+.produccion_img_img{
+  max-width: 1500px;
+}
+.produccion__title{
+  width: min(100% - 3rem, 460px);
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  padding-top: 8rem;
+  line-height: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.produccion__text {
+  width: min(100% - 2rem, 600px);
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+.produccion__link{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.produccion__link:hover{
+  /* display: flex; */
+  width: fit-content;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
+/*
+TAMAÑOS DE PANTALLA SUGERIDOS:
+
+576px  -> pantallas pequeñas (celulares)
+768px  -> pantallas pequeñas (tablets y celulares)
+992px  -> pantallas medianas (Desktop)
+1280px -> pantallas grandes (Desktops, TVs)
+*/

@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+}
+p {
+    color: green;
+    font-size: 15px;
+}
+h1{
+    background-color: white;
+    font-size: 50px;
+}
+h2 {
+    background-color: beige;
+    font-size: 50px;
+}
+h3{
+    background-color: gray;
+    font-size: 50px;
+}
+h4{
+    background-color: honeydew;
+    font-size: 50px;
+}
+btn texto-resaltado{
+    background-color: brown;
+}

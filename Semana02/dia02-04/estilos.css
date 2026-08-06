@@ -1,0 +1,71 @@
+body{
+    background-color:  hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 550px;
+    min-height: 400px;
+    display: flex;
+}
+.photo {
+    width: 300px;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+}
+
+.content{
+    width: 250px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+p,s{
+    color: hsl(228, 12%, 48%);
+}
+
+span{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+
+h2{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: small;
+    letter-spacing: 2px;    
+}
+
+h1{
+    font-family: "Fraunces", serif;
+}
+
+.content div {
+    display: flex;
+    gap: 15px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding: 15px 70px;
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    white-space: nowrap;
+}
