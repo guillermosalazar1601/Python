@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript + DOM: Contador de teclas</title>
+</head>
+<body>
+    <h1> Teclas presionadas: <span id="numerodeteclas">0</span></h1>
+    <h2 id="tecla">A</h2>
+    <script>
+        const tecla = document.getElementById('tecla')
+        const numerodeteclas = document.getElementById('numerodeteclas') 
+        let contador = 0
+        document.addEventListener('keydown',function(event){
+            contador ++
+            //console.log(contador)
+            tecla.textContent = event.key
+            numerodeteclas.textContent = contador
+        }) 
+    </script>
+</body>
+</html>

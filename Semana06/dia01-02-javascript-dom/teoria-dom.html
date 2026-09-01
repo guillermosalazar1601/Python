@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript + DOM</title>
+</head>
+<body>
+    <h1>DOM (Document Object Model)</h1>
+    <h2>JS Key detect</h2>
+    <h3 id="tecla">0</h3>
+    <h4 id="caracter">A</h4>
+<script>
+    console.log(document)
+    console.log(document.title) //Leer el elemento de la pagina
+    document.title = "Mi nueva página" //Escritura del título
+    const tecla = document.getElementById('tecla')
+    const caracter = document.getElementById('caracter')
+
+    document.addEventListener('keydown', function(event){
+        console.log('Presionaste una tecla')
+        console.log({event})
+
+        console.log(event.key) // letra presionada
+        console.log(event.keyCode) // Código ASCII
+        console.log({tecla})
+        tecla.textContent = event.keyCode
+        caracter.textContent = event.key
+    })
+
+</script>
+</body>
+</html>
