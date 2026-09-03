@@ -1,5 +1,5 @@
-const URL = 'https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db'
-
+const APIBOX_URL = 'https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db'
+const URL = window.location.hostname.endsWith('netlify.app') ? '/api/characters' : APIBOX_URL
 //Cargando datos del API
 const cargarCharacter = async () => {
     document.querySelector('#loading').classList.toggle('hidden')

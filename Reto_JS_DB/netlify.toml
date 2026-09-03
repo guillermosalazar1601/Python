@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/api/characters"
+  to = "https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/characters/*"
+  to = "https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db/:splat"
+  status = 200
+  force = true
