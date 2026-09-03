@@ -3,11 +3,22 @@ const URL = window.location.hostname.endsWith('netlify.app') ? '/api/characters'
 //Cargando datos del API
 const cargarCharacter = async () => {
     document.querySelector('#loading').classList.toggle('hidden')
-    const response = await fetch(URL)
-    const data = await response.json()
-    console.log(data)
-    renderCharacter(data)
-    document.querySelector('#loading').classList.toggle('hidden')
+    try {
+        const response = await fetch(URL)
+
+        if (!response.ok) {
+            throw new Error(`Error HTTP: ${response.status}`)
+        }
+
+        const data = await response.json()
+
+        renderCharacter(data)
+    } catch (error) {
+        console.error('Error al cargar personajes:', error)
+        alert('No se pudieron cargar los personajes.')
+    } finally {
+        document.querySelector('#loading').classList.toggle('hidden')
+    }
 }
 //Colores según raza
 const raceColors = {
