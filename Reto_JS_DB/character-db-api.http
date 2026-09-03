@@ -1,0 +1,18 @@
+### Listar personajes de Dragon Ball
+GET https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db
+### Crear nuevo personaje
+POST https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db
+Content-Type: application/json
+
+{
+    "name":,
+    "image":,
+    "race":,
+    "gender":
+}
+
+### Obtener informacion de un personaje
+GET https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db/7
+
+###Borrar personaje
+DELETE https://apibox.vercel.app/fIUD8hyhZAY9rBplPxaIBzR0ksJYyU7Q/api/character_db/7
